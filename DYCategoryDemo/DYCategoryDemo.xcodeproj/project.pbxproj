@@ -14,6 +14,11 @@
 		E4D715F11D6B641400A944CA /* DYCategoryDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4D715EF1D6B641400A944CA /* DYCategoryDemo.xcdatamodeld */; };
 		E4D715F31D6B641400A944CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D715F21D6B641400A944CA /* Assets.xcassets */; };
 		E4D715F61D6B641400A944CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D715F41D6B641400A944CA /* LaunchScreen.storyboard */; };
+		E4D7160D1D6B646C00A944CA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D716001D6B646C00A944CA /* UIView+Frame.m */; };
+		E4D7160E1D6B646C00A944CA /* UIImage+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D716031D6B646C00A944CA /* UIImage+QRCode.m */; };
+		E4D7160F1D6B646C00A944CA /* CALayer+ZUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D716061D6B646C00A944CA /* CALayer+ZUtility.m */; };
+		E4D716101D6B646C00A944CA /* NSString+RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D716091D6B646C00A944CA /* NSString+RegularExpression.m */; };
+		E4D716111D6B646C00A944CA /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D7160C1D6B646C00A944CA /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,16 @@
 		E4D715F21D6B641400A944CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D715F51D6B641400A944CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4D715F71D6B641400A944CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D715FF1D6B646C00A944CA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		E4D716001D6B646C00A944CA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		E4D716021D6B646C00A944CA /* UIImage+QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QRCode.h"; sourceTree = "<group>"; };
+		E4D716031D6B646C00A944CA /* UIImage+QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QRCode.m"; sourceTree = "<group>"; };
+		E4D716051D6B646C00A944CA /* CALayer+ZUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ZUtility.h"; sourceTree = "<group>"; };
+		E4D716061D6B646C00A944CA /* CALayer+ZUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ZUtility.m"; sourceTree = "<group>"; };
+		E4D716081D6B646C00A944CA /* NSString+RegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegularExpression.h"; sourceTree = "<group>"; };
+		E4D716091D6B646C00A944CA /* NSString+RegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegularExpression.m"; sourceTree = "<group>"; };
+		E4D7160B1D6B646C00A944CA /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		E4D7160C1D6B646C00A944CA /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +59,7 @@
 		E4D715D71D6B641400A944CA = {
 			isa = PBXGroup;
 			children = (
+				E4D715FD1D6B646C00A944CA /* DYCategory */,
 				E4D715E21D6B641400A944CA /* DYCategoryDemo */,
 				E4D715E11D6B641400A944CA /* Products */,
 			);
@@ -80,6 +96,63 @@
 				E4D715E41D6B641400A944CA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4D715FD1D6B646C00A944CA /* DYCategory */ = {
+			isa = PBXGroup;
+			children = (
+				E4D715FE1D6B646C00A944CA /* Frame */,
+				E4D716011D6B646C00A944CA /* QRCode */,
+				E4D716041D6B646C00A944CA /* QRCodeCover */,
+				E4D716071D6B646C00A944CA /* Regular */,
+				E4D7160A1D6B646C00A944CA /* Security */,
+			);
+			path = DYCategory;
+			sourceTree = "<group>";
+		};
+		E4D715FE1D6B646C00A944CA /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				E4D715FF1D6B646C00A944CA /* UIView+Frame.h */,
+				E4D716001D6B646C00A944CA /* UIView+Frame.m */,
+			);
+			path = Frame;
+			sourceTree = "<group>";
+		};
+		E4D716011D6B646C00A944CA /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				E4D716021D6B646C00A944CA /* UIImage+QRCode.h */,
+				E4D716031D6B646C00A944CA /* UIImage+QRCode.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		E4D716041D6B646C00A944CA /* QRCodeCover */ = {
+			isa = PBXGroup;
+			children = (
+				E4D716051D6B646C00A944CA /* CALayer+ZUtility.h */,
+				E4D716061D6B646C00A944CA /* CALayer+ZUtility.m */,
+			);
+			path = QRCodeCover;
+			sourceTree = "<group>";
+		};
+		E4D716071D6B646C00A944CA /* Regular */ = {
+			isa = PBXGroup;
+			children = (
+				E4D716081D6B646C00A944CA /* NSString+RegularExpression.h */,
+				E4D716091D6B646C00A944CA /* NSString+RegularExpression.m */,
+			);
+			path = Regular;
+			sourceTree = "<group>";
+		};
+		E4D7160A1D6B646C00A944CA /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				E4D7160B1D6B646C00A944CA /* NSString+Hash.h */,
+				E4D7160C1D6B646C00A944CA /* NSString+Hash.m */,
+			);
+			path = Security;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D715EB1D6B641400A944CA /* ViewController.m in Sources */,
+				E4D7160F1D6B646C00A944CA /* CALayer+ZUtility.m in Sources */,
 				E4D715E81D6B641400A944CA /* AppDelegate.m in Sources */,
 				E4D715E51D6B641400A944CA /* main.m in Sources */,
+				E4D716111D6B646C00A944CA /* NSString+Hash.m in Sources */,
+				E4D716101D6B646C00A944CA /* NSString+RegularExpression.m in Sources */,
+				E4D7160E1D6B646C00A944CA /* UIImage+QRCode.m in Sources */,
+				E4D7160D1D6B646C00A944CA /* UIView+Frame.m in Sources */,
 				E4D715F11D6B641400A944CA /* DYCategoryDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
