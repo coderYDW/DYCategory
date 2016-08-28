@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4CCCF361D7287C900E40DA6 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CCCF351D7287C900E40DA6 /* NSString+Path.m */; };
 		E4D715E51D6B641400A944CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D715E41D6B641400A944CA /* main.m */; };
 		E4D715E81D6B641400A944CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D715E71D6B641400A944CA /* AppDelegate.m */; };
 		E4D715EB1D6B641400A944CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D715EA1D6B641400A944CA /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4CCCF341D7287C900E40DA6 /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Path.h"; sourceTree = "<group>"; };
+		E4CCCF351D7287C900E40DA6 /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Path.m"; sourceTree = "<group>"; };
 		E4D715E01D6B641400A944CA /* DYCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D715E41D6B641400A944CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4D715E61D6B641400A944CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4CCCF331D7287C900E40DA6 /* SandBox */ = {
+			isa = PBXGroup;
+			children = (
+				E4CCCF341D7287C900E40DA6 /* NSString+Path.h */,
+				E4CCCF351D7287C900E40DA6 /* NSString+Path.m */,
+			);
+			path = SandBox;
+			sourceTree = "<group>";
+		};
 		E4D715D71D6B641400A944CA = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		E4D715FD1D6B646C00A944CA /* DYCategory */ = {
 			isa = PBXGroup;
 			children = (
+				E4CCCF331D7287C900E40DA6 /* SandBox */,
 				E4D715FE1D6B646C00A944CA /* Frame */,
 				E4D716011D6B646C00A944CA /* QRCode */,
 				E4D716041D6B646C00A944CA /* QRCodeCover */,
@@ -230,6 +243,7 @@
 				E4D7160F1D6B646C00A944CA /* CALayer+ZUtility.m in Sources */,
 				E4D715E81D6B641400A944CA /* AppDelegate.m in Sources */,
 				E4D715E51D6B641400A944CA /* main.m in Sources */,
+				E4CCCF361D7287C900E40DA6 /* NSString+Path.m in Sources */,
 				E4D716111D6B646C00A944CA /* NSString+Hash.m in Sources */,
 				E4D716101D6B646C00A944CA /* NSString+RegularExpression.m in Sources */,
 				E4D7160E1D6B646C00A944CA /* UIImage+QRCode.m in Sources */,
@@ -383,6 +397,7 @@
 				E4D715FC1D6B641400A944CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
